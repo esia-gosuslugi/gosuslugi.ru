@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static.css">
+    <link rel="stylesheet" href="lato/lato.css">
+    <title>Портал государственных услуг</title>
+    <script src="script.js"></script>
+</head>
+<body>
+  
+    <div class="cloud">
+        <center>
+        <img src="images/logo.png" class="logo">
+        </center>
+
+        <input type="text" class="input" placeholder="Телефон / Email / СНИЛС" id="user-login">
+        <input id="user-password" type="password" class="input" placeholder="Пароль">
+
+        <span class="forget">Восстановить</span>
+
+        <button class="login" onclick="login()">Войти</button>
+
+        <span class="another">
+            Войти другим способом
+        </span>
+
+        <div class="blox">
+            <div>
+                QR-код
+            </div>
+            <div>
+                Эл. подпись
+            </div>
+        </div>
+
+        <span class="cannot">
+            Не удаётся войти?
+        </span>
+
+        <span class="reg" onclick="window.location.href=`https:\/\/esia.gosuslugi.ru\/login\/registration`">
+            Зарегистрироваться
+        </span>
+
+
+        <div class="faq">
+            <img src="images/faq.svg" width="48px">
+
+            <span onclick="window.location.href='https:/\/\www.gosuslugi.ru/landing/esia-help'">Куда ещё можно войти с паролем от Госуслуг?</span>
+        </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

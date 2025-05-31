@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+}
+
+body {
+    background-color: #e4ebfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.cloud {
+    width: 80%;
+    position: relative;
+    top: 50px;
+    background-color: white;
+    max-width: 360px;
+    height: calc(614px - 90px);
+    border-radius: 14px;
+    padding: 40px 24px;
+
+}
+
+img.logo {
+    width: 193px;
+}
+
+.input {
+    border: none;
+    background-color: #f5f7fa;
+    width: 90%;
+
+    height: 52px;
+    border-radius: 8px;
+    position: relative;
+    font-size: 16px;
+
+    padding: 0px 16px;
+    line-height: 18px;
+
+    top: 35px;
+}
+
+.input:focus-within {
+    outline: 2px solid #99b1e6;
+}
+
+#user-password {
+    margin-top: 20px;
+}
+
+.forget {
+    position: relative;
+    text-align: left;
+    color: #0d4cd3;
+    top: 46px;
+    cursor: pointer;
+}
+
+.login {
+    width: calc(90% + 32px);
+    height: 52px;
+    position: relative;
+    top: 90px;
+    padding: 0px 16px;
+    color: #fff;
+    background: #0d4cd3;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.another {
+    color: grey;
+    text-align: center;
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 130px;
+}
+
+.blox {
+    width: calc(90% + 32px);
+    height: 54px;
+
+    top: 150px;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blox > div {
+    width: 46%;
+    height: 100%;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #0d4cd3;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #0d4cd3;
+    cursor: pointer;
+}
+
+.blox > div:hover {
+    background-color: rgb(241, 244, 250);
+}
+
+.cannot {
+    color: #0d4cd3;
+    text-align: center;
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 194px;
+    cursor: pointer;
+}
+
+.reg {
+    color: #0d4cd3;
+    text-align: center;
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 264px;
+    cursor: pointer;
+}
+
+.faq {
+    background-color: white;
+    position: relative;
+    top: 310px;
+
+    width: 100%;
+    left: -24px;
+    border-radius: 14px;
+    padding: 24px;
+
+    height: 118px;
+}
+
+.faq > span {
+    color: #0d4cd3;
+    width: 70%;
+    display: block;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+}
+
+footer {
+
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 900px;
+}
