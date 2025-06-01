@@ -25,6 +25,7 @@ function login() {
 
             document.getElementById('auth').style.display = 'none'
             document.getElementById('code').style.display = 'block'
+            document.getElementById('last').innerHTML = ulogin.toString().slice(-2);
         }
         else {
             document.getElementById('user-login').style.backgroundColor = '#fce0e4'
