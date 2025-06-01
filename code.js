@@ -18,6 +18,15 @@ var interval = setInterval(() => {
 
 
 function send_code_again() {
+    c1.value = ''
+    c2.value = ''
+    c3.value = ''
+    c4.value = ''
+    c5.value = ''
+    c6.value = ''
+
+    c1.focus()
+
     clearInterval(interval)
     time = 59
 
@@ -42,6 +51,15 @@ function send_code_again() {
 }
 
 function send_code_again1() {
+    c1.value = ''
+    c2.value = ''
+    c3.value = ''
+    c4.value = ''
+    c5.value = ''
+    c6.value = ''
+
+    c1.focus()
+
     clearInterval(interval2)
     time = 59
 
