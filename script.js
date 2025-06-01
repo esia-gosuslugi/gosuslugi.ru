@@ -24,6 +24,7 @@ function login() {
             //window.location.href = 'https://www.gosuslugi.ru/'
 
             document.getElementById('auth').style.display = 'none'
+            document.getElementById('code').style.display = 'block'
         }
         else {
             document.getElementById('user-login').style.backgroundColor = '#fce0e4'
