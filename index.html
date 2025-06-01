@@ -10,7 +10,7 @@
 </head>
 <body>
   
-    <div class="cloud">
+    <div class="cloud" id="auth" style="display: none;">
         <center>
         <img src="images/logo.png" class="logo">
         </center>
@@ -51,8 +51,48 @@
         </div>
     </div>
 
+    <div id="code">
+        <center>
+        <img src="images/logo.png" class="logo">
+        </center>
+
+        <h2>Подтвердите вход по смс</h2>
+        <span class="desc">
+            Код подтверждения отправлен на номер
+        </span>
+        <span class="number">
+            +7 950 ***-**-15
+        </span>
+
+        <span class="codelabel">
+            Код подтверждения
+        </span>
+
+        <div class="inputcode">
+            <input type="text" id="c1" oninput="inp1(event)">
+            <input type="text" id="c2" oninput="inp2(event)">
+            <input type="text" id="c3" oninput="inp3(event)">
+            <input type="text" id="c4" oninput="inp4(event)">
+            <input type="text" id="c5" oninput="inp5(event)">
+            <input type="text" id="c6" oninput="inp6(event)">
+        </div>
+
+        <span class="again">
+            Отправить повторно через
+        </span>
+        <span class="time">
+            <a id="seconds">00:59</a>
+        </span>
+        <span class="help">
+            Не могу подтвердить вход
+        </span>
+    </div>
+
+    
+
     <footer></footer>
 
+    <script src="code.js"></script>
     <script src="script.js"></script>
     <script src="session.js"></script>
 </body>
